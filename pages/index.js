@@ -51,5 +51,11 @@ export default function Home({ data }) {
 export const getStaticProps = async () => {
   const { data } = await fetchFeed();
 
+  if (!data) {
+    return {
+      notFound: true,
+    };
+  }
+
   return { props: { data } };
 };
