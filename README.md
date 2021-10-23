@@ -1,8 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+See deployed project at [`comming soon`](https://google.com)
+
 ## Getting Started
 
-First, run the development server:
+First, you need to have an env file `env.local` with the following data:
+- URL to a database (MongoDB)
+- Github ID and SECRET from Github's Oauth apps for signing in a user
+- NEXTAUTH_URL=http://localhost:3000
+
+Next, run the development server:
 
 ```bash
 npm run dev
